@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX20</title>
+    <script>
+        var lados = parseFloat(prompt("Quantos lados o polígono tem?"));
+
+        if(lados < 3){
+            alert("NÃO É UM POLÍGONO")
+        }
+
+        if(lados == 3){
+            alert("TRIÂNGULO")
+            var l1 = parseFloat(prompt("Qual é o tamanho do primeiro lado?"))
+            var l2 = parseFloat(prompt("Qual é o tamanho do segundo lado?"))
+            var l3 = parseFloat(prompt("Qual é o tamanho do terceiro lado?"))
+            var perimetro = (l1 + l2 + l3)
+            alert("Perimetro de " + perimetro)
+        }
+
+        if(lados == 4){
+            alert("QUADRADO")
+            var l1 = parseFloat(prompt("Qual é o tamanho do primeiro lado?"))
+            var l2 = parseFloat(prompt("Qual é o tamanho do segundo lado?"))
+            var l3 = parseFloat(prompt("Qual é o tamanho do terceiro lado?"))
+            var l4 = parseFloat(prompt("Qual é o tamanho do quarto lado?"))
+            var area = (l1 * l2 * l3 * l4)
+            alert("Área de " + area)
+        }
+
+        if(lados == 5){
+            alert("PENTÁGONO")
+        }
+
+        if(lados > 5){
+            alert("POLÍGONO NÃO IDENTIFICADO.")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

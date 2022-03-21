@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX24</title>
+    <script>
+         var jav1 = parseFloat(prompt("Qual a idade do primeiro javali?"))
+         var jav2 = parseFloat(prompt("Qual a idade do segundo javali?"))
+         var gir1 = parseFloat(prompt("Qual a idade da primeira girafa?"))
+         var gir2 = parseFloat(prompt("Qual a idade da segunda girafa?"))
+         var idade1 = 0
+         var idade2 = 0
+
+        if (jav1 > jav2){
+            // jav1 é o maior
+            if (gir1 > gir2){
+                //gir2 é a menor
+                idade1 = gir2 + jav1
+                idade2 = gir1 + jav2
+                alert(idade1)
+                alert(idade2)
+            }
+            if (gir1 < gir2){
+                //gir1 é a menor
+                idade1 = gir1 + jav1
+                idade2 = gir2 + jav2
+                alert(idade1)
+                alert(idade2)
+            }
+        }
+
+        if (jav2 > jav1){
+            // jav2 é o maior
+            if (gir1 > gir2){
+                //gir2 é a menor
+                idade1 = gir2 + jav2
+                idade2 = gir1 + jav1
+                alert(idade1)
+                alert(idade2)
+            }
+            if (gir1 < gir2){
+                //gir1 é a menor
+                idade1 = gir1 + jav2
+                idade2 = gir2 + jav1
+                alert(idade1)
+                alert(idade2)
+        }
+    }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

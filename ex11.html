@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX11</title>
+    <script>
+        kmi = parseFloat(prompt("Qual o km inicial?"));
+        kmf = parseFloat(prompt("Qual o km final?"));
+        litros = parseFloat(prompt("Quantos litros foram consumidos?"));
+        lucro = parseFloat(prompt("Quanto você ganhou dos passageiros?"));
+
+        var kmp = kmf - kmi;
+
+        var lucroLiquido = lucro - (kmp * 2,90);
+        var consumo = kmp/litros;
+
+        document.write("Você consumiu " + consumo + " litros por km." + "e percorreu" + kmp + "km")
+        document.write("<br>")
+        document.write("Você ganhou " + lucroLiquido + " reais, Parabéns!")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

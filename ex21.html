@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+         var n1 = parseFloat(prompt("Qual foi sua primeira nota?"))
+         var n2 = parseFloat(prompt("Qual foi sua segunda nota?"))
+         var n3 = parseFloat(prompt("E sobre a prova optativa. Qual sua nota?"))
+
+         if (n1 > n2){
+            if (n3 > n2){
+                n2 = n3
+                var total = n1 + n2
+            }
+         }
+
+         if (n1 < n2){
+            if (n3 > n1){
+                n1 = n3
+                var total = (n1 + n2)/2
+                if(total >= 6){
+                    alert(total)
+                    alert("Aprovado. Parabéns!")
+                }
+                if(total < 3){
+                    alert("Reprovado. Estude mais.")
+                {
+                if(total <= 3 && total > 6){
+                    alert("Reprovado. Estude mais.")
+                {
+                if(total < 3){
+                    alert("Reprovado. Estude mais.")
+                }
+
+                if(total <= 3 && total > 6){
+                    alert("Reprovado. Estude mais.")
+                }
+            }
+        }
+        }
+            }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

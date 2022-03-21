@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX15</title>
+    <script>
+        var nas = parseFloat(prompt("Qual é o ano de seu nascimento?"))
+        var idade = 0
+        while(nas < 2022){
+            nas += 1
+            idade += 1
+        }
+        document.write(idade)
+        if(idade >= 16 && idade < 18){
+            alert("Você pode tirar seu título do eleitor, mas não é obrigado.")
+        }
+        if(idade >= 18 ){
+            alert("Você é obrigado a votar.")
+        }
+        if(idade < 16){
+            alert("Você não pode votar")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
